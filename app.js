@@ -6,7 +6,7 @@ const sqlite3 = require('sqlite3').verbose();
 const session = require('express-session'); // Untuk session management
 
 const app = express();
-const PORT = 3000;
+process.env.PORT || 3000;
 
 // Middleware
 app.use(express.urlencoded({ extended: true }));
